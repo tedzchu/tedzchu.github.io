@@ -1,1 +1,133 @@
-"Hello World" 
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Teddy Chu</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Glegoo:400,700|Pridi:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <section class="hero is-success is-fullheight">
+        <div class="hero-body">
+            <div class="container has-text-centered" id="hero-container">
+                <h1 class="title">
+                    Teddy Chu
+                </h1>
+                <h2 class="subtitle">
+                    <span
+                        class="txt-rotate"
+                        data-period="2000"
+                        data-rotate='[ "Responsive", "Intuitive", "Accessible", "Semantic" ]'>
+                    </span> Front-End Developer
+                </h2>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <h2 class="subtitle section-title">About Me</h2>
+            <p class="section-content">Hey! I'm Teddy! I'm an aspiring front-end developer from Los Angeles who is about to complete his Bachelor's degree in Computer Science from Loyola Marymount University. I've got experience with HTML, CSS, JavaScript, React.js, React Native, Bootstrap, Node.js, Java, C++, C#, and Python, and I'm still learning more every day! I've worked on a wide range of projects, from organization web pages, to front-end application interfaces. If I'm not coding something or reading up on new technologies, I am playing fighting games or spoiling my leopard gecko, Ellie. I've linked some of my accounts and past work below, so check them out if you want to learn a little bit more about me.</p><br>
+            <img src="" alt="">
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="subtitle section-title">Portfolio</h2>
+            <div class="columns">
+                <div class="column is-half" id="vcs">
+                    <div class="content">
+                        <a href="http://lmuesports.com" target="_blank">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="./img/esports.jpg">
+                            <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">LMU Esports</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="column is-half" id="vcs">
+                    <div class="content">
+                        <a href="https://nebulalang.github.io/" target="_blank">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="./img/nebula2.png">
+                            <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">NebulaVR</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-content">
+                <p>Want to contact me or have any questions? You can find me on <a href="https://twitter.com/it_door" target="_blank">Twitter</a> or <a href="https://github.com/it-door" target="_blank">GitHub</a>, or just email me at tedchu4@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script>
+        var TxtRotate = function (el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 1000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+        };
+        TxtRotate.prototype.tick = function () {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+            if (this.isDeleting) {
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+            var that = this;
+            var delta = 230 - Math.random() * 100;
+            if (this.isDeleting) {
+                delta /= 2;
+            }
+            if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
+            }
+            setTimeout(function () {
+                that.tick();
+            }, delta);
+        };
+        window.onload = function () {
+            var elements = document.getElementsByClassName('txt-rotate');
+            for (var i = 0; i < elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-rotate');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                    new TxtRotate(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".txt-rotate > .wrap { border-right: 0.06em solid #3C288D }";
+            document.body.appendChild(css);
+        };
+    </script>
+</body>
+
+</html>

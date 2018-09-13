@@ -1,0 +1,137 @@
+html {
+    background-color: #111D56;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23422f61' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.hero {
+    background: url('img/banff.jpg'), no-repeat center;
+    background-size: cover;
+}
+
+#hero-container {
+    padding-bottom: 35vh;
+}
+
+.title {
+    color: white !important;
+    font-size: 7rem;
+    font-family: 'Pridi', serif;
+    font-weight: 300;
+}
+
+.subtitle {
+    color: rgb(215, 215, 215) !important;
+    font-size: 2.5rem;
+    font-family: 'Glegoo', serif;
+    text-transform: uppercase
+}
+
+#portfolio {
+    background-color: transparent;
+    text-align: center;
+    padding: 8vh 0;
+}
+
+.content {
+    position: relative;
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+
+  .content .content-overlay {
+    background: rgb(215, 215, 215);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+
+  .content:hover .content-overlay{
+    opacity: 1;
+  }
+
+  .content-image{
+    width: 100%;
+  }
+
+  .content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .content:hover .content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+
+  .content-details h3{
+    color: rgb(159, 187, 116);
+    font-weight: 300;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    font-size: 2em;
+  }
+
+  .fadeIn-bottom{
+    top: 80%;
+  }
+
+ .section-title {
+     width: 50%;
+     margin: 0 auto;
+     border-bottom: 1px solid rgb(159, 187, 116);
+     color: rgb(159, 187, 116) !important;
+     font-weight: 300;
+ }
+
+#portfolio .columns {
+    padding-top: 8vh;
+}
+
+#about {
+    text-align: center;
+    background-color: rgb(215, 215, 215);
+    padding: 8vh 0;
+}
+
+#about .section-title {
+    color: rgb(0, 167, 194) !important;
+    width: 50%;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(0, 167, 194);
+}
+
+.section-content {
+    color: rgb(0, 167, 194);
+    font-weight: 300;
+    font-size: 1.25em;
+    padding-top: 8vh;
+}
+
+#portfolio .section-content {
+    color: rgb(159, 187, 116)
+}

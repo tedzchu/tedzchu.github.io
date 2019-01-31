@@ -1,0 +1,12 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Simple Web Sockets",
+"dataUrl": "network_test.data.unityweb",
+"wasmCodeUrl": "network_test.wasm.code.unityweb",
+"wasmFrameworkUrl": "network_test.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}

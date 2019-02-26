@@ -3,17 +3,16 @@
 
 <head>
     <title>Teddy Chu</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <link rel="shortcut icon" href="./img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Glegoo:400,700|Pridi:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
 
-    <!-- Bulma CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -24,11 +23,8 @@
                     Teddy Chu
                 </h1>
                 <h2 class="subtitle">
-                    <span
-                        class="txt-rotate"
-                        data-period="2000"
-                        data-rotate='[ "Responsive", "Intuitive", "Accessible", "Semantic" ]'>
-                    </span> Front-End Developer
+                    <span class="txt-rotate" data-period="2000" data-rotate='[ "Innovative", "Collaborative", "Curious", "Semantic" ]'>
+                    </span> Software Engineer
                 </h2>
             </div>
         </div>
@@ -36,47 +32,102 @@
     <section id="about">
         <div class="container">
             <h2 class="subtitle section-title">About Me</h2>
-            <p class="section-content">Hey! I'm Teddy! I'm an aspiring front-end developer from Los Angeles who is about to complete his Bachelor's degree in Computer Science from Loyola Marymount University. I've got experience with HTML, CSS, JavaScript, React.js, React Native, Bootstrap, Node.js, Java, C++, C#, and Python, and I'm still learning more every day! I've worked on a wide range of projects, from organization web pages, to front-end application interfaces. If I'm not coding something or reading up on new technologies, I am playing fighting games or spoiling my leopard gecko, Ellie. I've linked some of my accounts and past work below, so check them out if you want to learn a little bit more about me.</p><br>
+            <p class="section-content">Hi, I'm Teddy! I'm a budding software engineer from Los Angeles who is about to
+                complete his Bachelor's degree in Computer Science at Loyola Marymount University.
+                I'm fluent in programming with Javascript, Python, Java, and C#, and have a lot of experience with
+                HTML, CSS, and React Native on the web/mobile side.
+                I've worked on a wide range of projects including web pages, mobile apps, VR interfaces, and a couple
+                interesting toy problems for class. If I'm not coding something or reading up on new technologies,
+                I'm working on graphic design, playing fighting games, or spoiling my leopard gecko, Ellie. I've linked
+                some of my accounts and past work below, so check them out if you want to learn a little bit more about
+                me.</p><br>
             <img src="" alt="">
         </div>
     </section>
     <section id="portfolio">
         <div class="container">
             <h2 class="subtitle section-title">Portfolio</h2>
-            <div class="columns">
-                <div class="column is-half" id="vcs">
-                    <div class="content">
-                        <a href="http://lmuesports.com" target="_blank">
-                            <div class="content-overlay"></div>
-                            <img class="content-image" src="./img/esports.jpg">
-                            <div class="content-details fadeIn-bottom">
-                                <h3 class="content-title">LMU Esports</h3>
-                            </div>
-                        </a>
+            <div class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-content">
+                    <div class="box" id="loadMe">
                     </div>
                 </div>
-                <div class="column is-half" id="vcs">
+                <button class="modal-close is-large" aria-label="close"></button>
+            </div>
+            <div class="columns">
+                <div class="column" id="vcs">
                     <div class="content">
-                        <a href="https://nebulalang.github.io/" target="_blank">
-                            <div class="content-overlay"></div>
-                            <img class="content-image" src="./img/nebula2.png">
-                            <div class="content-details fadeIn-bottom">
-                                <h3 class="content-title">NebulaVR</h3>
-                            </div>
-                        </a>
+                        <div class="content-overlay" onclick="modal('playroll')"></div>
+                        <img class="content-image" src="./img/playrollSquare.png">
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">Playroll</h3>
+                            <p class="content-subtitle">React Native</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column" id="vcs">
+                    <div class="content">
+                        <div class="content-overlay" onclick="modal('nebula')"></div>
+                        <img class="content-image" src="./img/nebula2.png">
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">Nebula VR</h3>
+                            <p class="content-subtitle">Unity C#</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column" id="vcs">
+                    <div class="content">
+                        <div class="content-overlay" onclick="modal('casper')"></div>
+                        <img class="content-image" src="./img/casper.png">
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">casper</h3>
+                            <p class="content-subtitle">Javascript - Ohm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column" id="vcs">
+                    <div class="content">
+                        <div class="content-overlay" onclick="modal('esports')"></div>
+                        <img class="content-image" src="./img/esports.jpg">
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">LMU Esports</h3>
+                            <p class="content-subtitle">HTML - CSS - Javascript</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column" id="vcs">
+                    <div class="content">
+                        <div class="content-overlay" onclick="modal('ktwo')"></div>
+                        <img class="content-image" src="./img/ktwo.png">
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">K'Two</h3>
+                            <p class="content-subtitle">Unity C# - Python</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column" id="vcs">
+                    <div class="content">
+                        <div class="content-overlay" onclick="modal('kirkman')"></div>
+                        <img class="content-image" src="./img/kirkman1.gif">
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">Kirkman Schoolgirl Problem</h3>
+                            <p class="content-subtitle">Java - More To Come</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="section-content">
-                <p>Want to contact me or have any questions? You can find me on <a href="https://www.linkedin.com/in/theodore-chu/" target="_blank">LinkedIn</a> or <a href="https://github.com/it-door" target="_blank">GitHub</a>, or just email me at tedchu4@gmail.com</p>
+                <p>Any questions, or just want to get to know me more? You can find me on <a href="https://www.linkedin.com/in/theodore-chu/"
+                        target="_blank">LinkedIn</a> or <a href="https://github.com/it-door" target="_blank">GitHub</a>,
+                    or just email me at tedchu4@gmail.com!</p>
             </div>
         </div>
     </section>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         var TxtRotate = function (el, toRotate, period) {
             this.toRotate = toRotate;
@@ -122,12 +173,18 @@
                     new TxtRotate(elements[i], JSON.parse(toRotate), period);
                 }
             }
-            // INJECT CSS
             var css = document.createElement("style");
             css.type = "text/css";
             css.innerHTML = ".txt-rotate > .wrap { border-right: 0.06em solid #3C288D }";
             document.body.appendChild(css);
         };
+        function modal(content) {
+            $("#loadMe").load("portfolio.html #" + content);
+            $(".modal").addClass("is-active");
+        }
+        $(".modal-close").click(function () {
+            $(".modal").removeClass("is-active");
+        });
     </script>
 </body>
 

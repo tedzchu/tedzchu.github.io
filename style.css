@@ -141,3 +141,13 @@ html {
 a:hover {
   color: rgb(163, 163, 163)
 }
+
+.playroll-content{
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.playroll-image{
+    width: 65%;
+    align-self: center;
+}

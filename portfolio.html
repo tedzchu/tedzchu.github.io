@@ -1,121 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio HTML</title>
-  </head>
 
-  <body>
-    <div class="content" id="playroll">
-      <h1>Playroll</h1>
-      <p>
-        Playroll is a small startup/side project I am currently involved in with
-        both Computer Science and Entrepreneurship students at LMU. The mobile
-        app aims to change the way music playlists are created and shared.
-        Front-end development is done entirely in React Native, and the back-end
-        polls the Spotify API in Go using GraphQL.
-      </p>
-      <p>
-        I'm heading the front-end design and implementation of the app,
-        troubleshooting others' React Native troubles and putting out screens of
-        my own. This is all according to spec I created using the InVision app
-        for wireframing. While I have plans to move onto working on the
-        back-end, I am currently pushing to have a beta app release by April and
-        am focusing all of my efforts into finalizing front-end components.
-      </p>
-      <p>
-        Due to the creators of Playroll and the nature of startups with
-        investors, I don't currently have links available for you to check out,
-        so I've gone ahead and attached some screen recordings of the app that
-        are WIP.
-      </p>
-    </div>
-    <div class="content" id="nebula">
-      <h1>Nebula VR</h1>
-      <p>
-        Nebula VR is a virtual reality IDE used for the visual scripting
-        language Nebula. The IDE was developed in Unity for the HTC Vive and was
-        developed for LMU's CMSI 401: Software Engineering Laboratory course. It
-        takes the coordinates of game objects within the environment and
-        translates that to the Nebula Javascript compiler, then sends the output
-        back to the VR environment. This is communicated through the MVVM
-        (model-view-viewmodel) architecture.
-      </p>
-      <p>
-        I headed the "view" aspect of this project, working solely on the Unity
-        side. I designed the interactions between function/variable blocks (see
-        presentation linked below) including spawning blocks, grabbing blocks,
-        and linking blocks together. I wrote a large part of the Unity C# of
-        this project and was happy to have such a new topic like virtual reality
-        be my introduction to collaborative software engineering.
-      </p>
-      <h2>Links</h2>
-      <a href="https://github.com/jtorre39/nebula/" target="_blank">GitHub</a> |
-      <a
-        href="http://bjohnson.lmu.build/cmsi401web/overview.html"
-        target="_blank"
-        >Class Detail</a
-      >
-      <br />
-      <a href="https://vimeo.com/306294398" target="_blank"
-        >Live Presentation</a
-      >
-      (Use password "LMUITS") |
-      <a href="https://nebulalang.github.io/" target="_blank"
-        >More on NebulaLang
-      </a>
-    </div>
-    <div class="content" id="casper">
-      <h1>casper</h1>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio HTML</title>
+</head>
 
-      <p>
-        "casper" is a scripting language designed for LMU's CMSI 488: Language
-        Translation and Implementation (aka Compilers) course of Spring 2019.
-        The language's is built using Ohm, compiled to Javascript, and tested
-        using Mocha and ESLint. The Ohm grammar along with parser tests are
-        available on the GitHub repo, and abstract syntax trees and semantic
-        analysis is on the way.
-      </p>
-      <p>
-        "casper" is statically typed and includes partial type inference,
-        parallel variable declaration and assignment, higher order functions,
-        and optional parameters. It takes inspiration from Python and Typescript
-        to create a clean-looking interview language to practice in.
-      </p>
-      <p>
-        Currently, I am the working project manager and am currently finalizing
-        the grammar and developing the abstract syntax trees for the language.
-      </p>
+<body>
+  <div class="content" id="playroll">
+    <h1>Playroll</h1>
+    <p>
+      Playroll is a small startup/side project I am currently involved in with
+      both Computer Science and Entrepreneurship students at LMU. The mobile
+      app aims to change the way music playlists are created and shared.
+      Front-end development is done entirely in React Native, and the back-end
+      polls the Spotify API in Go using GraphQL.
+    </p>
+    <p>
+      I'm heading the front-end design and implementation of the app,
+      troubleshooting others' React Native troubles and putting out screens of
+      my own. This is all according to spec I created using the InVision app
+      for wireframing. While I have plans to move onto working on the
+      back-end, I am currently pushing to have a beta app release by April and
+      am focusing all of my efforts into finalizing front-end components.
+    </p>
+    <p>
+      Due to the creators of Playroll and the nature of startups with
+      investors, I don't currently have links available for you to check out,
+      so I've gone ahead and attached some screen recordings of the app that
+      are WIP.
+    </p>
+    <div class="playroll-container">
+      <img class="playroll-image" src="img/playroll/login.gif"></img>
+      <h6>Login screen using expo.io straight from VSCode!</h6>
+      <img class="playroll-image" src="img/playroll/home+search.gif"></img>
+      <h6>Home screen implementing an image carousel, and search functionality with GraphQL that searches Spotify.</h6>
+      <img class="playroll-image" src="img/playroll/newplayroll.gif"></img>
+      <h6>Creating a new "playroll", generates a track list and displays progress at the bottom of the screen.</h6>
+    </div>
+  </div>
+  <div class="content" id="nebula">
+    <h1>Nebula VR</h1>
+    <p>
+      Nebula VR is a virtual reality IDE used for the visual scripting
+      language Nebula. The IDE was developed in Unity for the HTC Vive and was
+      developed for LMU's CMSI 401: Software Engineering Laboratory course. It
+      takes the coordinates of game objects within the environment and
+      translates that to the Nebula Javascript compiler, then sends the output
+      back to the VR environment. This is communicated through the MVVM
+      (model-view-viewmodel) architecture.
+    </p>
+    <p>
+      I headed the "view" aspect of this project, working solely on the Unity
+      side. I designed the interactions between function/variable blocks (see
+      presentation linked below) including spawning blocks, grabbing blocks,
+      and linking blocks together. I wrote a large part of the Unity C# of
+      this project and was happy to have such a new topic like virtual reality
+      be my introduction to collaborative software engineering.
+    </p>
+    <h2>Links</h2>
+    <a href="https://github.com/jtorre39/nebula/" target="_blank">GitHub</a> |
+    <a href="http://bjohnson.lmu.build/cmsi401web/overview.html" target="_blank">Class Detail</a>
+    <br />
+    <a href="https://vimeo.com/306294398" target="_blank">Live Presentation</a>
+    (Use password "LMUITS") |
+    <a href="https://nebulalang.github.io/" target="_blank">More on NebulaLang
+    </a>
+  </div>
+  <div class="content" id="casper">
+    <h1>casper</h1>
 
-      <h2>Links</h2>
-      <a href="https://github.com/dmoini/casper" target="_blank">GitHub</a> |
-      <a href="http://cs.lmu.edu/~ray/classes/cc/" target="_blank"
-        >Class Detail</a
-      >
-    </div>
-    <div class="content" id="esports">
-      <p>
-        I've been the LMU Esports vice president since its founding in 2016.
-        Over the course of Summer 2019, I did a rebranding of the club in its
-        entirety to encourage funding from the school and other potential
-        sponsors. The result is a new website along with a fresh logo, along
-        with an affiliation to purchase jerseys designed by myself.
-      </p>
-      <p>
-        Admittedly there isn't anything generally special about this site, but
-        it is one that I put together on my own and am proud of some of the
-        design features in the site, logo, and jerseys. I hope it serves as a
-        decent example of my ability to put together a website.
-      </p>
-      <h2>Links</h2>
-      <a href="https://lmuesports.com" target="_blank">LMU Esports Homepage</a>
-    </div>
-    <div class="content" id="ktwo">
-      <p>ktwo loaded</p>
-    </div>
-    <div class="content" id="kirkman">
-      <p>hello</p>
-    </div>
-  </body>
+    <p>
+      "casper" is a scripting language designed for LMU's CMSI 488: Language
+      Translation and Implementation (aka Compilers) course of Spring 2019.
+      The language's is built using Ohm, compiled to Javascript, and tested
+      using Mocha and ESLint. The Ohm grammar along with parser tests are
+      available on the GitHub repo, and abstract syntax trees and semantic
+      analysis is on the way.
+    </p>
+    <p>
+      "casper" is statically typed and includes partial type inference,
+      parallel variable declaration and assignment, higher order functions,
+      and optional parameters. It takes inspiration from Python and Typescript
+      to create a clean-looking interview language to practice in.
+    </p>
+    <p>
+      Currently, I am the working project manager and am currently finalizing
+      the grammar and developing the abstract syntax trees for the language.
+    </p>
+
+    <h2>Links</h2>
+    <a href="https://github.com/dmoini/casper" target="_blank">GitHub</a> |
+    <a href="http://cs.lmu.edu/~ray/classes/cc/" target="_blank">Class Detail</a>
+  </div>
+  <div class="content" id="esports">
+    <h1>LMU Esports</h1>
+    <p>
+      I've been the LMU Esports vice president since its founding in 2016.
+      Over the course of Summer 2019, I did a rebranding of the club in its
+      entirety to encourage funding from the school and other potential
+      sponsors. The result is a new website along with a fresh logo, along
+      with an affiliation to purchase jerseys designed by myself.
+    </p>
+    <p>
+      Admittedly there isn't anything generally special about this site, but
+      it is one that I put together on my own and am proud of some of the
+      design features in the site, logo, and jerseys. I hope it serves as a
+      decent example of my ability to put together a website.
+    </p>
+    <h2>Links</h2>
+    <a href="https://lmuesports.com" target="_blank">LMU Esports Homepage</a>
+  </div>
+  <div class="content" id="ktwo">
+    <h1>K'two</h1>
+    <p>K’two is a 1-4 player, browser-based, online multiplayer, class-based,
+      zombie wave survival game. It's the sequel to a game built by an LMU
+      Computer Science professor 8 years ago: K'tah for the same course said 
+      professor attended here, CMSI 402: Senior Project Laboratory.
+    </p>
+    <p>
+      K'two is another Unity project I'm working on; this time out of the
+      virtual reality space. This time I'm in a smaller group and am focusing
+      heavily on the networking and game design aspects. Although this project 
+      is still a work in progress, we've already gone through multiple iterations 
+      of multiplayer implementations such as WebSocket and Socket.IO. We're beginning 
+      to settle on a TCP client-server model through Unity itself, but I'll be 
+      sure to update on the final plans.
+    </p>
+    <p>
+      Not only do I think this is a cool homage to our professor at LMU, but 
+      I find this an interesting way to apply skills and knowledge of networking. 
+      Multiplayer games are an integral part to today's entertainment and learning 
+      how to handle over thirty clients on my product at once seems like an interesting 
+      challenge.
+    </p>
+    <h2>Links</h2>
+    <a href="http://justinkyletorres.com/ktwo-webgl-sandbox/" target="_blank">K'two Working Demo</a> |
+    <a href="http://ktah.cs.lmu.edu/" target="_blank">Original K'tah Game</a> |
+    <a href="https://github.com/jtorre39/ktwo" target="_blank">K'Two GitHub Repository</a>
+  </div>
+  <div class="content" id="kirkman">
+    <h1>Kirkman</h1>
+    <p>I haven't had time to put this up yet, but a few members of LMU Computer Science
+      have formed a cult following around this fun little problem. I intend to not only post 
+      my solution, but also analyze solutions faster than mine and their implementations of 
+      data structures along with derivations of algorithms that have been built upon over 
+      the past few years.
+    </p>
+  </div>
+</body>
+
 </html>

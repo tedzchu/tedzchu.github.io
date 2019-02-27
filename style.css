@@ -39,7 +39,6 @@ html {
     margin: auto;
     overflow: hidden;
     border-radius: 15px;
-    cursor: pointer;
   }
 
   .content .content-overlay {
@@ -59,6 +58,7 @@ html {
 
   .content:hover .content-overlay{
     opacity: 1;
+    cursor: pointer;
   }
 
   .content-image{
@@ -80,6 +80,7 @@ html {
     -webkit-transition: all 0.3s ease-in-out 0s;
     -moz-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
   }
 
   .content:hover .content-details{
@@ -135,4 +136,8 @@ html {
 
 #portfolio .section-content {
     color: rgb(159, 187, 116)
+}
+
+a:hover {
+  color: rgb(163, 163, 163)
 }

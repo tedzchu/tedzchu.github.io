@@ -41,6 +41,10 @@ html {
     border-radius: 15px;
   }
 
+  .loadMe content {
+    border-radius: 0px;
+  }
+
   .content .content-overlay {
     background: rgb(215, 215, 215);
     position: absolute;

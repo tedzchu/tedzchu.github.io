@@ -56,4 +56,5 @@ function modal(content) {
 }
 $(".modal-close").click(function () {
     $(".modal").removeClass("is-active");
+    $("#loadMe").html("");
 });

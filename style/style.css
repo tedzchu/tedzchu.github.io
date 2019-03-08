@@ -4,7 +4,7 @@ html {
 }
 
 .hero {
-    background: url('img/banff.jpg'), no-repeat center;
+    background: url('../img/banff.jpg'), no-repeat center;
     background-size: cover;
 }
 

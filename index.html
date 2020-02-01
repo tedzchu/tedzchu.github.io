@@ -1,143 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Teddy Chu</title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Glegoo:400,700|Pridi:300,400"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <title>Teddy Chu</title>
-  <meta charset="utf-8" />
-  <link rel="shortcut icon" href="./img/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link href="https://fonts.googleapis.com/css?family=Glegoo:400,700|Pridi:300,400" rel="stylesheet" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
-  <link rel="stylesheet" href="style/style.css" />
-</head>
-
-<body>
-  <section class="hero is-success is-fullheight">
-    <div class="hero-body">
-      <div class="container has-text-centered" id="hero-container">
-        <h1 class="title">
-          Teddy Chu
-        </h1>
-        <h2 class="subtitle">
-          <span class="txt-rotate" data-period="2000"
-            data-rotate='[ "Innovative", "Collaborative", "Curious", "Semantic" ]'>
-          </span>
-          Software Engineer
-        </h2>
-      </div>
-    </div>
-  </section>
-  <section id="about">
-    <div class="container">
-      <h2 class="subtitle section-title">About Me</h2>
-      <p class="section-content">
-        Hi, I'm Teddy! I'm a budding software engineer from Los Angeles who is
-        about to complete his Bachelor's degree in Computer Science at Loyola
-        Marymount University. I'm fluent in programming with <b>Javascript</b>,
-        <b>Python</b>, <b>Java</b>, and <b>C#</b>, and have a lot of experience with <b>HTML</b>, <b>CSS</b>, and
-        <b>React Native</b> on the web/mobile side. I've worked on a wide range of
-        projects including web pages, mobile apps, VR interfaces, and a couple
-        interesting toy problems for class. If I'm not coding something or
-        reading up on new technologies, I'm working on graphic design, playing
-        fighting games, or spoiling my leopard gecko, Ellie. You can check out some 
-        of my recent projects below, as well as my LinkedIn, GitHub, and resume!
-      </p>
-      <br />
-    </div>
-  </section>
-  <section id="portfolio">
-    <div class="container">
-      <h2 class="subtitle section-title">Portfolio</h2>
-      <div class="modal">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-          <div class="box" id="loadMe" style="text-align: left">
-          </div>
-        </div>
-        <button class="modal-close is-large" aria-label="close"></button>
-      </div>
-      <div class="columns">
-        <div class="column" id="vcs">
-          <div class="content" id="playroll" onclick="modal('playroll')">
-            <div class="content-overlay"></div>
-            <img class="content-image" src="./img/playrollSquare.png" />
-            <div class="content-details fadeIn-bottom">
-              <h3 class="content-title">Playroll</h3>
-              <p class="content-subtitle">React Native</p>
-            </div>
-          </div>
-        </div>
-        <div class="column" id="vcs">
-          <div class="content" onclick="modal('nebula')">
-            <div class="content-overlay"></div>
-            <img class="content-image" src="./img/nebula2.png" />
-            <div class="content-details fadeIn-bottom">
-              <h3 class="content-title">Nebula VR</h3>
-              <p class="content-subtitle">Unity C#</p>
-            </div>
-          </div>
-        </div>
-        <div class="column" id="vcs">
-          <div class="content" onclick="modal('casper')">
-            <div class="content-overlay"></div>
-            <img class="content-image" src="./img/casper.png" />
-            <div class="content-details fadeIn-bottom">
-              <h3 class="content-title">casper</h3>
-              <p class="content-subtitle">Javascript</p>
-            </div>
-          </div>
+  <body>
+    <section class="hero is-success is-fullheight">
+      <div class="hero-body">
+        <div class="container has-text-centered" id="hero-container">
+          <h1 class="title">
+            Teddy Chu
+          </h1>
+          <h2 class="subtitle">
+            <span
+              class="txt-rotate"
+              data-period="2000"
+              data-rotate='[ "Innovative", "Collaborative", "Curious", "Semantic" ]'
+            >
+            </span>
+            Software Engineer
+          </h2>
         </div>
       </div>
-      <div class="columns">
-        <div class="column" id="vcs">
-          <div class="content" onclick="modal('esports')">
-            <div class="content-overlay"></div>
-            <img class="content-image" src="./img/esports.jpg" />
-            <div class="content-details fadeIn-bottom">
-              <h3 class="content-title">LMU Esports</h3>
-              <p class="content-subtitle">HTML - CSS</p>
-            </div>
-          </div>
-        </div>
-        <div class="column" id="vcs">
-          <div class="content" onclick="modal('ktwo')">
-            <div class="content-overlay"></div>
-            <img class="content-image" src="./img/ktwo.png" />
-            <div class="content-details fadeIn-bottom">
-              <h3 class="content-title">K'Two</h3>
-              <p class="content-subtitle">Unity C#</p>
-            </div>
-          </div>
-        </div>
-        <div class="column" id="vcs">
-          <div class="content" onclick="modal('kirkman')">
-            <div class="content-overlay"></div>
-            <img class="content-image" src="./img/kirkman1.gif" />
-            <div class="content-details fadeIn-bottom">
-              <h3 class="content-title">Kirkman Schoolgirl Problem</h3>
-              <p class="content-subtitle">Java</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section-content">
-        <p>
-          Thanks for taking the time to read through all this! I'd like to leave you 
-          with my <a href="docs/TeddyChuResume02_2019.pdf" target="_blank">resume</a>
-          if you'd like to know a little more. Any lingering questions about me or 
-          my work?  You can also find me on
-          <a href="https://www.linkedin.com/in/theodore-chu/" target="_blank">LinkedIn</a>
-          or <a href="https://github.com/it-door" target="_blank">GitHub</a>,
-          or just email me at tedchu4@gmail.com!
+    </section>
+    <section id="about">
+      <div class="container">
+        <h2 class="subtitle section-title">About Me</h2>
+        <p class="section-content">
+          Hi, I'm Teddy! I'm a budding software engineer from Los Angeles who is
+          about to complete his Bachelor's degree in Computer Science at Loyola
+          Marymount University. I'm fluent in programming with
+          <b>Javascript</b>, <b>Python</b>, <b>Java</b>, and <b>C#</b>, and have
+          a lot of experience with <b>HTML</b>, <b>CSS</b>, and
+          <b>React Native</b> on the web/mobile side. I've worked on a wide
+          range of projects including web pages, mobile apps, VR interfaces, and
+          a couple interesting toy problems for class. If I'm not coding
+          something or reading up on new technologies, I'm working on graphic
+          design, playing fighting games, or spoiling my leopard gecko, Ellie.
+          You can check out some of my recent projects below, as well as my
+          LinkedIn, GitHub, and resume!
         </p>
+        <br />
       </div>
-    </div>
-  </section>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/script.js"></script>
-</body>
-
+    </section>
+    <section id="portfolio">
+      <div class="container">
+        <h2 class="subtitle section-title">Portfolio</h2>
+        <div class="modal">
+          <div class="modal-background"></div>
+          <div class="modal-content">
+            <div class="box" id="loadMe" style="text-align: left"></div>
+          </div>
+          <button class="modal-close is-large" aria-label="close"></button>
+        </div>
+        <div class="columns">
+          <div class="column" id="vcs">
+            <div class="content" id="playroll" onclick="modal('playroll')">
+              <div class="content-overlay"></div>
+              <img class="content-image" src="./img/playrollSquare.png" />
+              <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">Playroll</h3>
+                <p class="content-subtitle">React Native</p>
+              </div>
+            </div>
+          </div>
+          <div class="column" id="vcs">
+            <div class="content" onclick="modal('nebula')">
+              <div class="content-overlay"></div>
+              <img class="content-image" src="./img/nebula2.png" />
+              <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">Nebula VR</h3>
+                <p class="content-subtitle">Unity C#</p>
+              </div>
+            </div>
+          </div>
+          <div class="column" id="vcs">
+            <div class="content" onclick="modal('casper')">
+              <div class="content-overlay"></div>
+              <img class="content-image" src="./img/casper.png" />
+              <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">casper</h3>
+                <p class="content-subtitle">Javascript</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column" id="vcs">
+            <div class="content" onclick="modal('esports')">
+              <div class="content-overlay"></div>
+              <img class="content-image" src="./img/esports.jpg" />
+              <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">LMU Esports</h3>
+                <p class="content-subtitle">HTML - CSS</p>
+              </div>
+            </div>
+          </div>
+          <div class="column" id="vcs">
+            <div class="content" onclick="modal('ktwo')">
+              <div class="content-overlay"></div>
+              <img class="content-image" src="./img/ktwo.png" />
+              <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">K'Two</h3>
+                <p class="content-subtitle">Unity C#</p>
+              </div>
+            </div>
+          </div>
+          <div class="column" id="vcs">
+            <div class="content" onclick="modal('kirkman')">
+              <div class="content-overlay"></div>
+              <img class="content-image" src="./img/kirkman1.gif" />
+              <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">Kirkman Schoolgirl Problem</h3>
+                <p class="content-subtitle">Java</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-content">
+          <p>
+            Thanks for taking the time to read through all this! I'd like to
+            leave you with my
+            <a href="docs/TeddyChuResume02_2020.pdf" target="_blank">resume</a>
+            if you'd like to know a little more. Any lingering questions about
+            me or my work? You can also find me on
+            <a href="https://www.linkedin.com/in/theodore-chu/" target="_blank"
+              >LinkedIn</a
+            >
+            or <a href="https://github.com/it-door" target="_blank">GitHub</a>,
+            or just email me at tedchu4@gmail.com!
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>

@@ -41,12 +41,8 @@ html {
   border-radius: 15px;
 }
 
-.modal-content {
-  position: relative;
-  width: 90%;
-  max-width: 500px;
-  margin: auto;
-  overflow: hidden;
+.loadMe .content {
+  border-radius: 0;
 }
 
 .content .content-overlay {

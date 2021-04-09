@@ -38,10 +38,15 @@ html {
   max-width: 500px;
   margin: auto;
   overflow: hidden;
+  border-radius: 15px;
 }
 
-.loadMe content {
-  border-radius: 0px;
+.modal-content {
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  overflow: hidden;
 }
 
 .content .content-overlay {
